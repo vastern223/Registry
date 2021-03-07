@@ -1,0 +1,39 @@
+﻿<Window x:Class="Registry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registry"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closed="Window_Closed">
+    <Grid x:Name="main_grid" Background="#FF8B5757">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu  Grid.Column="0" Grid.Row="0" x:Name="menuMain" Background="#FF8B5757" HorizontalAlignment="Left" Width="198">
+            <MenuItem Name="menuitem" Header="software colors" >
+                <MenuItem Header="black color" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="white color" Click="MenuItem_Click_1"></MenuItem>
+                <MenuItem Header="red color" Click="MenuItem_Click_2"></MenuItem>
+                <MenuItem Header="system color" Click="MenuItem_Click_3"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Menu  Grid.Column="1" Grid.Row="0" x:Name="menuMain1" Background="#FF8B5757" HorizontalAlignment="Left" Width="198">
+            <MenuItem Name="menuitem1" Header="font size" >
+                <MenuItem Header="5" Click="MenuItem_Click_4" ></MenuItem>
+                <MenuItem Header="10" Click="MenuItem_Click_5"></MenuItem>
+                <MenuItem Header="15" Click="MenuItem_Click_6"  ></MenuItem>
+                <MenuItem Header="20" Click="MenuItem_Click_7" ></MenuItem>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
